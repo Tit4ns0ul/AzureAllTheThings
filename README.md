@@ -1,3 +1,4 @@
+![Microsoft-Azure](https://i.postimg.cc/KjRXLt3z/Microsoft-Azure-svg.png)
 ## **Azure CLI**
 
 **A comprehensive repository of Azure CLI and PowerShell commands for efficient cloud management.**
