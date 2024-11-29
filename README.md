@@ -1,19 +1,25 @@
-**Azure CLI**
+## **Azure CLI**
 
 **A comprehensive repository of Azure CLI and PowerShell commands for efficient cloud management.**
 
-**Table of Contents**
+---
+
+## **Table of Contents**
 
 1. [Introduction](#introduction)
 2. [Structure](#structure)
 3. [Contributing](#contribution)
 4. [License](#license)
 
-**Introduction**
+---
+
+## **Introduction**
 
 This repository is a curated collection of Azure CLI and PowerShell commands designed to streamline your cloud operations. Whether you're a seasoned Azure veteran or just starting your cloud journey, you'll find valuable resources here.
 
-**Structure**
+---
+
+## **Structure**
 
 The repository is organized into the following directories:
 
@@ -25,10 +31,14 @@ The repository is organized into the following directories:
   - Yet Another Topic
   - Final Topic
 
-**Contributing**
+---
+
+## **Contributing**
 
 Be sure to read [CONTRIBUTING.md](CONTRIBUTING.md)
 
-**License**
+---
+
+## **License**
 
 This repository is licensed under the [MIT License](LICENSE). For more details, refer to the [MIT License](https://opensource.org/license/mit-0) file.
