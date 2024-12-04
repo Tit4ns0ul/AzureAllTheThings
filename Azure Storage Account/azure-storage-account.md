@@ -1,4 +1,4 @@
-**Azure Storage Account Commands**
+## **Azure Storage Account Commands**
 
 Here are some of the most common Azure CLI commands for managing storage accounts:
 
@@ -26,7 +26,7 @@ az storage account show --name <storage-account-name> --resource-group <resource
 az storage account delete --name <storage-account-name> --resource-group <resource-group-name> --yes
 ```
 
-- **Managing Storage Account Keys**
+## **Managing Storage Account Keys**
 
 ```bash
 # List keys
@@ -36,7 +36,7 @@ az storage account keys list --name <storage-account-name> --resource-group <res
 az storage account keys renew --name <storage-account-name> --resource-group <resource-group-name> --key <key-name>
 ```
 
-- **Managing Storage Account Network Rules**
+## **Managing Storage Account Network Rules**
 
 ```bash
 # Add a network rule
@@ -46,7 +46,7 @@ az storage account network-rule add --name <storage-account-name> --resource-gro
 az storage account network-rule remove --name <storage-account-name> --resource-group <resource-group-name> --ip-address <ip-address>
 ```
 
-- **Managing Storage Account Blob Service**
+## **Managing Storage Account Blob Service**
 
 ```bash
 # Create a blob container
@@ -65,7 +65,7 @@ az storage blob download --name <blob-name> --container-name <container-name> --
 az storage blob delete --name <blob-name> --container-name <container-name> --account-name <storage-account-name>
 ```
 
-- **Managing Storage Account File Service**
+## **Managing Storage Account File Service**
 
 ```bash
 # Create a file share
@@ -82,6 +82,46 @@ az storage file download --name <file-name> --share-name <share-name> --file <fi
 
 # Delete a file
 az storage file delete --name <file-name> --share-name <share-name> --account-name <storage-account-name>
+```
+
+## **Creating and Managing Disk**
+
+- **Creating a Managed Disk**
+
+```bash
+az disk create --name <disk-name> --resource-group <resource-group-name> --location <location> --size-gb <size-in-gb> --sku Standard_LRS
+```
+
+- **Listing Disks**
+
+```bash
+az disk list --resource-group <resource-group-name>
+```
+
+- **Showing a Disk**
+
+```bash
+az disk show --name <disk-name> --resource-group <resource-group-name>
+```
+
+- **Deleting a Disk**
+
+```bash
+az disk delete --name <disk-name> --resource-group <resource-group-name> --yes
+```
+
+## **Attaching and Detaching Disks to Virtual Machines**
+
+- **Attaching a Disk to a VM**
+
+```bash
+az vm disk attach --name <vm-name> --resource-group <resource-group-name> --disk-name <disk-name> --lun <lun-number>
+```
+
+- **Detaching a Disk from a VM**
+
+```bash
+az vm disk detach --name <vm-name> --resource-group <resource-group-name> --lun <lun-number>
 ```
 
 **Remember to replace the placeholders like `<storage-account-name>`, `<resource-group-name>`, `<location>`, `<sku-name>`, `<container-name>`, `<blob-name>`, `<file-path>`, and `<file-name>` with your actual values.**
