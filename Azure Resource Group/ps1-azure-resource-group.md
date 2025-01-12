@@ -67,12 +67,24 @@ Remove-AzResourceGroupLock -ResourceGroupName MyResourceGroup -LockName <LockNam
 
 ## **Working with Deployments**
 
-Azure CLI also provides commands to manage deployments within a resource group:
+Azure  PowerShell commands also provides commands to manage deployments within a resource group:
 
 - **Creating a Deployment**
 
 ```powershell
 New-AzResourceGroupDeployment -ResourceGroupName MyResourceGroup -TemplateFile C:\Templates\template.json
+```
+
+- **Cancel a Deployment**
+
+```powershell
+Stop-AzResourceGroupDeployment -ResourceGroupName MyResourceGroup -Name MyDeployment
+```
+
+- **Deployment Operations**
+
+```powershell
+Get-AzResourceGroupDeploymentOperation -ResourceGroupName MyResourceGroup -DeploymentName MyDeployment
 ```
 
 - **Listing Deployments**
