@@ -1,6 +1,6 @@
 ## **Azure Group Commands**
 
-Azure Resource Groups are containers that hold related Azure resources. Here are the primary Azure CLI commands for managing resource groups:
+Azure Resource Groups are containers that hold related Azure resources. Here are the primary PowerShell commands for managing resource groups:
 
 - **Creating a Resource Group**
 
