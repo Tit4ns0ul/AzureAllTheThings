@@ -1,4 +1,4 @@
-## **Install Azure PowerShell Modules **
+## **Install Azure PowerShell Modules**
 
 To install ## **Azure PowerShell** you can follow these steps. Azure PowerShell is a set of cmdlets for managing Azure resources directly from the command line:
 
