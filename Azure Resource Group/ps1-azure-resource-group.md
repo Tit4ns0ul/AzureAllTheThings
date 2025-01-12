@@ -16,8 +16,8 @@ az group delete --name MyResourceGroup
 
 - **Listing Resource Groups**
 
-```Bash
-az group list
+```powershell
+Get-AzResourceGroup
 ```
 
 - **Showing a Resource Group**
