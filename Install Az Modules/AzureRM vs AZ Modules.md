@@ -37,5 +37,5 @@ This cmdlet retrieves all resource groups in your Azure subscription using the A
 - **Use Get-AzureRM if you are working with older scripts or need backward compatibility, though it is advisable to migrate to Az as AzureRM is deprecated.**
 
 
-## **Conclusion**The Az module is the future of Azure PowerShell.
+### **Conclusion**The Az module is the future of Azure PowerShell.
 It is recommended to migrate your scripts and processes from AzureRM to Az to ensure ongoing support and better compatibility with newer Azure features.
