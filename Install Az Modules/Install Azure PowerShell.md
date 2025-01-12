@@ -45,15 +45,14 @@ Update-Module -Name Az
 ```powershell
 Get-Help Install-Module --full
 ```
-- Always run PowerShell as Administrator to avoid permission issues when installing or updating modules.
-- **Use -Scope CurrentUser if you don't want to install the module system-wide (useful in cases where you don't have admin rights):**
+- **Always run PowerShell as Administrator to avoid permission issues when installing or updating modules.**
+- Use -Scope CurrentUser if you don't want to install the module system-wide (useful in cases where you don't have admin rights):
   
 ```powershell
 Install-Module -Name Az -AllowClobber -Force -Scope CurrentUser
 ```
 
 - **Check for updates regularly to keep your Azure PowerShell up-to-date:**
-- 
 ```powershell
 Update-Module -Name Az
 ```
@@ -68,7 +67,6 @@ $PSVersionTable.PSVersion
 
 
 - **Consider using Set-ExecutionPolicy if you encounter issues related to running scripts:**
-- 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
@@ -76,7 +74,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
 - **Use Get-Help <Cmdlet> for any command to access its documentation:**
-- 
 ```powershell
 Get-Help Connect-AzAccount
 ```
