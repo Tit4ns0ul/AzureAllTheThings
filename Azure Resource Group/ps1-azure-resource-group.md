@@ -35,14 +35,12 @@ Set-AzResourceGroup -Name MyResourceGroup -Tag @{ Environment = "Production"; Ow
 - **Checking Resource Group Existence**
 
 ```powershell
-$resourceGroup = Get-AzResourceGroup -Name MyResourceGroup -ErrorAction SilentlyContinue
-
-if ($null -ne $resourceGroup) {
+try {
+    Get-AzResourceGroup -Name MyResourceGroup
     Write-Output "Resource group 'MyResourceGroup' exists."
-} else {
+} catch {
     Write-Output "Resource group 'MyResourceGroup' does not exist."
 }
-
 ```
 
 ## **Additional Commands**
