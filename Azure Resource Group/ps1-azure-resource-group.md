@@ -48,13 +48,15 @@ try {
 - **Exporting a Resource Group Template**
 
 ```powershell
-az group export --name MyResourceGroup --output file.json
+Export-AzResourceGroup -ResourceGroupName MyResourceGroup -Path C:\Templates\file.json
 ```
 
 - **Locking a Resource Group**
 - 
 ```powershell
-az group lock create --name MyResourceGroup --lock-type CanNotDelete
+New-AzResourceGroupLock -ResourceGroupName MyResourceGroup -LockLevel CanNotDelete -Notes "Locking to prevent accidental deletion"
+
+New-AzResourceGroupLock -ResourceGroupName MyResourceGroup -LockLevel ReadOnly -Notes "Locking for auditing"
 ```
 
 - **Unlocking a Resource Group**
