@@ -41,21 +41,25 @@ Update-Module -Name Az
 ## **Remember**
 
 - **Use the --help flag with any command to get detailed usage information. For example:**
-
+- 
 ```powershell
 Get-Help Install-Module --full
 ```
+
+
 - **Always run PowerShell as Administrator to avoid permission issues when installing or updating modules.**
 - Use -Scope CurrentUser if you don't want to install the module system-wide (useful in cases where you don't have admin rights):
-  
+- 
 ```powershell
 Install-Module -Name Az -AllowClobber -Force -Scope CurrentUser
 ```
+
 
 - **Check for updates regularly to keep your Azure PowerShell up-to-date:**
 ```powershell
 Update-Module -Name Az
 ```
+
 
 - **Use Get-InstalledModule to check the version of installed modules and ensure that the correct version is being used.**
 - If you face issues during installation, ensure that your PowerShell version is updated. You can check the version with:
@@ -64,6 +68,7 @@ Update-Module -Name Az
 $PSVersionTable.PSVersion
 ```
 - Be aware of cross-platform support: The Az module works on Windows, Linux, and macOS, while older modules like AzureRM were limited to Windows only.
+
 
 
 - **Consider using Set-ExecutionPolicy if you encounter issues related to running scripts:**
