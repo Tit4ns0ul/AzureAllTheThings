@@ -33,8 +33,9 @@ This cmdlet retrieves all resource groups in your Azure subscription using the A
 
 
 ### **When to Use Get-Az vs Get-AzureRM**
+
 - **Use `Get-Az` for new projects or when setting up new environments as it supports cross-platform use and all modern Azure services.**
-** Use `Get-AzureRM` if you are working with older scripts or need backward compatibility, though it is advisable to migrate to Az as AzureRM is deprecated.**
+- **Use `Get-AzureRM` if you are working with older scripts or need backward compatibility, though it is advisable to migrate to Az as AzureRM is deprecated.**
 
 
 ### **Conclusion**The Az module is the future of Azure PowerShell.
