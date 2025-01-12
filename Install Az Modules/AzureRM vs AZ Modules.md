@@ -16,7 +16,7 @@ Azure PowerShell cmdlets are used to manage resources in Microsoft Azure. There 
 Get-AzureRMResourceGroup
 ```
 
-# **Get-Az**
+## **2.Get-Az**
 Get-Az cmdlets are part of the newer Az module, which is the recommended module for managing Azure resources. It is fully cross-platform and works on Windows, macOS, and Linux.
 
 Key Points:
