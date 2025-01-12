@@ -62,7 +62,7 @@ New-AzResourceGroupLock -ResourceGroupName MyResourceGroup -LockLevel ReadOnly -
 - **Unlocking a Resource Group**
 
 ```powershell
-az group lock delete --name MyResourceGroup --lock-name MyLockName
+Remove-AzResourceGroupLock -ResourceGroupName MyResourceGroup -LockName <LockName>
 ```
 
 ## **Working with Deployments**
@@ -72,31 +72,30 @@ Azure CLI also provides commands to manage deployments within a resource group:
 - **Creating a Deployment**
 
 ```powershell
-az group deployment create --name MyDeployment --resource-group MyResourceGroup --template-file template.json --parameters parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName MyResourceGroup -TemplateFile C:\Templates\template.json
 ```
 
 - **Listing Deployments**
 
 ```powershell
-az group deployment list --resource-group MyResourceGroup
+Get-AzResourceGroupDeployment -ResourceGroupName MyResourceGroup
 ```
 
 - **Showing a Deployment**
 
 ```powershell
-az group deployment show --name MyDeployment --resource-group MyResourceGroup
+Get-AzResourceGroupDeployment -ResourceGroupName MyResourceGroup -Name DeploymentName
 ```
 
 - **Deleting a Deployment**
 
 ```powershell
-az group deployment delete --name MyDeployment --resource-group MyResourceGroup
+Remove-AzResourceGroupDeployment -ResourceGroupName MyResourceGroup -Name MyDeployment
 ```
 
 ## **Remember**
 
 - Always replace MyResourceGroup with the actual name of your resource group.
 - Use the --help flag with any command to get detailed usage information.
-- For more advanced scenarios, consider using Azure PowerShell or Azure Resource Manager templates.
 
 By effectively using these commands, you can efficiently manage your Azure resources within resource groups.
