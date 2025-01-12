@@ -29,13 +29,13 @@ Get-AzResourceGroup -Name MyResourceGroupName
 - **Updating a Resource Group**
 
 ```powershell
-az group update --name MyResourceGroup --tags Department=IT,Environment=Prod
+Set-AzResourceGroup -Name MyResourceGroup -Tag @{ Environment = "Production"; Owner = "Admin" }
 ```
 
 - **Checking Resource Group Existence**
 
 ```powershell
-az group exists --name MyResourceGroup
+Get-AzResourceGroup -Name MyResourceGroupName
 ```
 
 ## **Additional Commands**
