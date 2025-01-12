@@ -1,18 +1,19 @@
+# **Install Azure PowerShell Modules Commands**
 
-## **install Azure PowerShell Modules Commands**
+To install **Azure PowerShell**, you can follow these steps. Azure PowerShell is a set of cmdlets for managing Azure resources directly from the command line:
 
-To install Azure PowerShell, you can follow these steps. Azure PowerShell is a set of cmdlets for managing Azure resources directly from the command line:
+## **Step 1: Open PowerShell as Administrator**
 
-**Step 1: Open PowerShell as Administrator**
-
-```
 Make sure to run PowerShell with elevated (administrator) privileges to avoid permission issues during installation.
-```
 
-**Step 2: Install the Az Module**
+---
+
+## **Step 2: Install the Az Module**
+
+To install the `Az` module, use the following command:
 
 ```powershell
-Install-Module -Name Az -AllowClobber -Force 
+Install-Module -Name Az -AllowClobber -Force
 ```
 
 **Step 3: Verify the Installation**
