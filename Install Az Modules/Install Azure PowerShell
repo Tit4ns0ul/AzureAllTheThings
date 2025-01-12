@@ -33,7 +33,7 @@ Import-Module Az
 Connect-AzAccount
 ```
 
-**Checking Resource Group Existence**
+**Step 6: Update Azure PowerShell (Optional)**
 
 ```powershell
 Update-Module -Name Az
