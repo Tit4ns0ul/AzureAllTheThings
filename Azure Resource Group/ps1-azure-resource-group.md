@@ -10,8 +10,8 @@ New-AzResourceGroup -Name MyResourceGroup -Location "Central India"
 
 - **Deleting a Resource Group**
 
-```Bash
-az group delete --name MyResourceGroup
+```powershell
+Remove-AzResourceGroup -Name MyResourceGroupName -Force
 ```
 
 - **Listing Resource Groups**
@@ -22,19 +22,19 @@ Get-AzResourceGroup
 
 - **Showing a Resource Group**
 
-```Bash
-az group show --name MyResourceGroup
+```powershell
+Get-AzResourceGroup -Name MyResourceGroupName
 ```
 
 - **Updating a Resource Group**
 
-```Bash
+```powershell
 az group update --name MyResourceGroup --tags Department=IT,Environment=Prod
 ```
 
 - **Checking Resource Group Existence**
 
-```Bash
+```powershell
 az group exists --name MyResourceGroup
 ```
 
@@ -42,19 +42,19 @@ az group exists --name MyResourceGroup
 
 - **Exporting a Resource Group Template**
 
-```Bash
+```powershell
 az group export --name MyResourceGroup --output file.json
 ```
 
 - **Locking a Resource Group**
-
-```Bash
+- 
+```powershell
 az group lock create --name MyResourceGroup --lock-type CanNotDelete
 ```
 
 - **Unlocking a Resource Group**
 
-```Bash
+```powershell
 az group lock delete --name MyResourceGroup --lock-name MyLockName
 ```
 
@@ -64,25 +64,25 @@ Azure CLI also provides commands to manage deployments within a resource group:
 
 - **Creating a Deployment**
 
-```Bash
+```powershell
 az group deployment create --name MyDeployment --resource-group MyResourceGroup --template-file template.json --parameters parameters.json
 ```
 
 - **Listing Deployments**
 
-```Bash
+```powershell
 az group deployment list --resource-group MyResourceGroup
 ```
 
 - **Showing a Deployment**
 
-```Bash
+```powershell
 az group deployment show --name MyDeployment --resource-group MyResourceGroup
 ```
 
 - **Deleting a Deployment**
 
-```Bash
+```powershell
 az group deployment delete --name MyDeployment --resource-group MyResourceGroup
 ```
 
