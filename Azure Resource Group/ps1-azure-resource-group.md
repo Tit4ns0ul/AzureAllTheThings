@@ -52,7 +52,6 @@ Export-AzResourceGroup -ResourceGroupName MyResourceGroup -Path C:\Templates\fil
 ```
 
 - **Locking a Resource Group**
-- 
 ```powershell
 New-AzResourceGroupLock -ResourceGroupName MyResourceGroup -LockLevel CanNotDelete -Notes "Locking to prevent accidental deletion"
 
