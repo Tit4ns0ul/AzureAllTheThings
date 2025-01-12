@@ -4,8 +4,8 @@ Azure Resource Groups are containers that hold related Azure resources. Here are
 
 - **Creating a Resource Group**
 
-```Bash
-az group create --name MyResourceGroup --location EastUS
+```powershell
+New-AzResourceGroup -Name RG -Location "Central India"
 ```
 
 - **Deleting a Resource Group**
